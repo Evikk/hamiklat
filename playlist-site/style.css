@@ -1,0 +1,180 @@
+.row {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+
+
+.col {
+	display: block;
+	float: right;
+    margin: 1% 1% 1% 1%;
+    
+	
+}
+.span-3-of-3 {
+	width: 100%; 
+}
+
+.span-2-of-3 {
+	width: 66.13%; 
+}
+
+.span-1-of-3 {
+    width: 31.26%; 
+    
+}
+
+
+@media only screen and (max-width: 640px) {
+	.span-3-of-3 {
+		width: 100%; 
+	}
+	.span-2-of-3 {
+		width: 100%; 
+	}
+	.span-1-of-3 {
+		width: 100%;
+	}
+}
+
+
+*{
+    direction: rtl;
+    margin: 0;
+    border: 0;
+}
+html,
+body{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    background-color: #474747;
+	
+   
+}
+.container {
+    background-color: #2c2a2a;
+    height: 65vh;
+   
+}
+
+.container img{
+    background-color: rgba(240, 248, 255, 0.774);
+    width: 200px;
+    display: block;
+    margin: 10px auto 20px auto;
+    padding: 20px 20px ;
+    border-radius: 10%;
+    border-color: transparent;
+}
+
+.playlists {
+    height: 100vh;
+    
+}
+
+.container h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 90px;
+    color: #1db954;
+}
+
+.container h3 {
+    text-align: center;
+    font-size: 30px;
+    color: #1db954;
+    letter-spacing: 3px;
+}
+
+
+
+.pl{
+    background-color: #2c2a2a;
+}
+.pl h5{
+    font-size: 40px;
+    text-align: center;
+    padding: 5%;
+    color: #1db954;
+
+}
+
+iframe{
+    width: 100%;
+    height: 480px;
+    display: block;
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+footer{
+    margin-bottom: 0;
+    font-size: 30px;
+    float: left;
+}
+
+
+/* This is DropMenu */
+
+.dropbtn {
+    background-color: #3e8e41;
+    color: rgb(0, 0, 0);
+    padding: 5px 20px;
+    font-size: 26px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+  }
+  
+  #myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 26px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  .dropdown {
+    
+    position: fixed;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
